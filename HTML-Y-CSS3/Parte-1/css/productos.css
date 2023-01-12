@@ -1,0 +1,102 @@
+/*En este bloque de codigo configuramos el diseno
+del header de tal forma que todo quede centrado es 
+decir en la mitad*/
+header {
+    background-color: #BBBBBB;
+}
+
+.divHeader {
+    width: 940px;
+    position: relative;
+    margin: 0 auto; /*la primera posicion es superior e inferior y auto es a los lados*/
+}
+
+/*Aqui configuramos el diseno que tendra la barra de navegacion*/
+nav {
+    position: absolute;
+    top: 110px; /*Centralizamos el nav en el medio*/
+    right: 0;
+}
+
+/*li es una lista no ordenada*/
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; /*separar cada li a la izquiera don 15px*/
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /*colocar la palabra con subrayado*/
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto; 
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*esta linea reemplaza a las tres que le siguen a esta*/
+   /*border-color:  #000000;
+    border-width: 10px ;
+    border-style: solid;*/
+
+   /* border-style: dashed;*/
+   /* border-top-width: 10px;*/
+   border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);
+    padding: 40px;
+}
+#copy{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+
+    
+}
