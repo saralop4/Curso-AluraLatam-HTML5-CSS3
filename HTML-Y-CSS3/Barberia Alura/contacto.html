@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="divHeader">
-            <h1><img id="logo" src="img/logo.png"></h1>
+            <h1><img id="logo" src="img/logo.png" alt="Logo de La Baberia Alura"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -27,91 +27,111 @@
     </header>
 
     <main>
-        <form action="registra_persona.php"> 
-					
-		
-            <table  border="2" width="100%">
-                <tr>
-                    <th style="text-align: left">Nombre y Apellido </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" name="nombre">
-                    </td>
-                </tr>
+        <form>
+            <fieldset>
+                <table id="tablaForm" border="2" width="100%">
+                    <tr>
+                        <th style="text-align: left">Nombre y Apellido </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre" required>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <th style="text-align: left">Correo Electronico: </th>
-                </tr>
-                <tr>
-                    <td> <input type="email" name="email" placeholder="email@dominio.com"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: left">Telefono: </th>
-                </tr>
-                <tr>
-                    <td> <input type="number" name="telefono" placeholder="(xx) xxxx xxxx"></td>
-                </tr>
-                <tr>
-                    <th style="text-align: left">Mensaje </th>
-                </tr>
-                <tr>
-                    <td>
-                        <textarea id="textArea" name="mensaje" cols="50" rows="9"
-                            placeholder="Ingrese aqui los comentarios"></textarea>
-                    </td>
-                </tr>
+                    <tr>
+                        <th style="text-align: left">Correo Electronico: </th>
+                    </tr>
+                    <tr>
+                        <td> <input type="email" name="email" placeholder="email@dominio.com" required></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left">Telefono: </th>
+                    </tr>
+                    <tr>
+                        <td> <input type="number" name="telefono" placeholder="(xx) xxxx xxxx" required></td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left">Mensaje </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="textArea" name="mensaje" cols="50" rows="9"
+                                placeholder="Ingrese aqui los comentarios" required></textarea>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <th style="text-align: left">¿Como le gustaria que lo contactemos? </th>
-                </tr>
-                
-                <tr id="trComolegustaria">
-                    <td>
-                        <input type="radio" name="contactar" value="correo">Email
-                        <br>
-                       <input type="radio" name="contactar" value="tel"> Telefono
-                        <br>
-                        <input type="radio" name="contactar" value="whatsApp">WhatsApp
-                    </td>
-                </tr>
-                <tr>
-                    <th style="text-align: left">¿En cual horario prefiere ser atendido:</th>
-                </tr>
-                <tr>
-                    <td>
-                        <select id="horario" name="horario" size="1">
-                            <option value="0" selected>Escoja uno...</option>
-                            <option value="manana" selected>Manana</option>
-                            <option value="tarde" selected>Tarde</option>
-                            <option value="noche" selected>Noche</option>
-                        </select>
-                    </td>
-                </tr>
+                    <tr>
+                        <th style="text-align: left">¿Como le gustaria que lo contactemos? </th>
+                    </tr>
 
-                <tr id="checkbox">
-                    <th style="text-align: left">
-                        <input type="checkbox" name="recibir" value="recibir">
-                        <label>¿Le gustaria recibir novedades de la Barberia Alura?</label>
-                    </th>
-                </tr>
+                    <tr id="trComolegustaria">
+                        <td style="font-size:18px">
+                            <input type="radio" name="contactar" value="correo">Email
+                            <br>
+                            <input type="radio" name="contactar" value="tel">Telefono
+                            <br>
+                            <input type="radio" name="contactar" value="whatsApp" checked>WhatsApp
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="text-align: left">¿En cual horario prefiere ser atendido?</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="horario" name="horario" size="1">
+                                <option value="0" selected>Escoja uno...</option>
+                                <option value="manana" selected>Manana</option>
+                                <option value="tarde" selected>Tarde</option>
+                                <option value="noche" selected>Noche</option>
+                            </select>
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td colspan="2">
-                        <hr />
-                    </td>
-                </tr>
+                    <tr id="checkbox">
+                        <th style="text-align: left">
+                            <input type="checkbox" name="recibir" value="recibir" checked required>
+                            <label>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+                        </th>
+                    </tr>
 
-            <tr>
-                    <th><input type="submit" value="Enviar Formulario"> </th>&nbsp;&nbsp;
-                </tr>
-            </table>
+                    <tr>
+                        <td colspan="2">
+                            <hr />
+                        </td>
+                    </tr>
 
-    </form>
+                    <tr>
+                        <td><input type="submit" value="Enviar Formulario" class="enviar"> </td>
+                </table>
+                <table id="tablaSegundaria">
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Miercoles</td>
+                            <td>08h - 20h</td>
+                        </tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+        </form>
+        </fieldset>
         <br>
     </main>
     <footer>
-        <img id="foto" src="img/logo-blanco.png">
+        <img id="foto" src="img/logo-blanco.png" alt="Logo de La Baberia Alura">
         <p id="copy">&copy Copyright Barberia Alura - 2023</p>
     </footer>
 </body>

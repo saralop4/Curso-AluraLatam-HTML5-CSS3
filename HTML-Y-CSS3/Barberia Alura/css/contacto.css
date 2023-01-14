@@ -9,7 +9,6 @@ decir en la mitad*/
     position: relative;
     margin: 0 auto; /*la primera posicion es superior e inferior y auto es a los lados*/
 }
-
 /*Aqui configuramos el diseno que tendra la barra de navegacion*/
 nav {
     position: absolute;
@@ -51,16 +50,20 @@ footer{
     font-size: 13px;
     margin: 20px;
 }
+
 form{
     margin: 40px 0;
 }
-table tr th{
+
+#tablaForm tr th{
     font-size: 22px;
-    height: 15px;
+    height: 25px;
 }
-table tr td{
+
+#tablaForm tr td{
     height: 60px;
 }
+
 form input{
     padding: 10px 25px;
     width: 50%;
@@ -73,10 +76,37 @@ form input{
     width: auto;
 }
 #horario{
-    width: 55%;
-    height: 35px;
+    width: 55%; /*Ancho*/
+    height: 35px; /*Alto*/
     font-size: 18px;
 }
 #textArea{
     font-size: 18px;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius:5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2); 
+}
+#tablaSegundaria{
+    margin: 40px 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+}
+#tablaSegundaria td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
