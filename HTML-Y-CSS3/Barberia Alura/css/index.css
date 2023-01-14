@@ -1,0 +1,100 @@
+header {
+    background-color: #BBBBBB;
+}
+/*En este bloque de codigo configuramos el diseno
+del header de tal forma que todo quede centrado es 
+decir en la mitad*/
+.divHeader {
+    width: 940px;
+    position: relative;
+    margin: 0 auto; /*la primera posicion es superior e inferior y auto es a los lados*/
+}
+
+/*Aqui configuramos el diseno que tendra la barra de navegacion*/
+nav {
+    position: absolute;
+    top: 110px; /*Centralizamos el nav en el medio*/
+    right: 0;
+}
+
+/*li es una lista no ordenada*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*separar cada li a la izquiera don 15px*/
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /*colocar la palabra con subrayado*/
+}
+
+#banner{
+    width:100%;
+    margin: 20px auto;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 25px;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+}
+
+em strong{
+    color:red;
+}
+
+#mision{
+    font-size: 23px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;
+}
+
+.diferenciales ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.items{
+    font-style: italic;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+}
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);
+    padding: 40px;
+}
+footer p{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+main{
+    width: 940px; /*se le da este ancho a la pagina para centralizar mejor los elementos del main*/
+    margin: 0 auto; /*0 para arriba y para abajo y auto a los lados*/
+}
+
+

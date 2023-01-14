@@ -1,0 +1,82 @@
+header {
+    background-color: #BBBBBB;
+}
+/*En este bloque de codigo configuramos el diseno
+del header de tal forma que todo quede centrado es 
+decir en la mitad*/
+.divHeader {
+    width: 940px;
+    position: relative;
+    margin: 0 auto; /*la primera posicion es superior e inferior y auto es a los lados*/
+}
+
+/*Aqui configuramos el diseno que tendra la barra de navegacion*/
+nav {
+    position: absolute;
+    top: 110px; /*Centralizamos el nav en el medio*/
+    right: 0;
+}
+
+/*li es una lista no ordenada*/
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*separar cada li a la izquiera don 15px*/
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline; /*colocar la palabra con subrayado*/
+}
+
+main{
+    width: 940px; /*se le da este ancho a la pagina para centralizar mejor los elementos del main*/
+    margin: 0 auto; /*0 para arriba y para abajo y auto a los lados*/
+}
+
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);
+    padding: 40px;
+}
+#copy{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+form{
+    margin: 40px 0;
+}
+table tr th{
+    font-size: 22px;
+    height: 15px;
+}
+table tr td{
+    height: 60px;
+}
+form input{
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 17px;
+}
+#trComolegustaria td input{
+    width: auto; 
+    }
+#checkbox th input{
+    width: auto;
+}
+#horario{
+    width: 55%;
+    height: 35px;
+    font-size: 18px;
+}
+#textArea{
+    font-size: 18px;
+}

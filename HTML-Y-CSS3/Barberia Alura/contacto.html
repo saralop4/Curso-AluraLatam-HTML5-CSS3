@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="divHeader">
+            <h1><img id="logo" src="img/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="registra_persona.php"> 
+					
+		
+            <table  border="2" width="100%">
+                <tr>
+                    <th style="text-align: left">Nombre y Apellido </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="nombre">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: left">Correo Electronico: </th>
+                </tr>
+                <tr>
+                    <td> <input type="email" name="email" placeholder="email@dominio.com"></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Telefono: </th>
+                </tr>
+                <tr>
+                    <td> <input type="number" name="telefono" placeholder="(xx) xxxx xxxx"></td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Mensaje </th>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="textArea" name="mensaje" cols="50" rows="9"
+                            placeholder="Ingrese aqui los comentarios"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th style="text-align: left">¿Como le gustaria que lo contactemos? </th>
+                </tr>
+                
+                <tr id="trComolegustaria">
+                    <td>
+                        <input type="radio" name="contactar" value="correo">Email
+                        <br>
+                       <input type="radio" name="contactar" value="tel"> Telefono
+                        <br>
+                        <input type="radio" name="contactar" value="whatsApp">WhatsApp
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">¿En cual horario prefiere ser atendido:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="horario" name="horario" size="1">
+                            <option value="0" selected>Escoja uno...</option>
+                            <option value="manana" selected>Manana</option>
+                            <option value="tarde" selected>Tarde</option>
+                            <option value="noche" selected>Noche</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr id="checkbox">
+                    <th style="text-align: left">
+                        <input type="checkbox" name="recibir" value="recibir">
+                        <label>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <hr />
+                    </td>
+                </tr>
+
+            <tr>
+                    <th><input type="submit" value="Enviar Formulario"> </th>&nbsp;&nbsp;
+                </tr>
+            </table>
+
+    </form>
+        <br>
+    </main>
+    <footer>
+        <img id="foto" src="img/logo-blanco.png">
+        <p id="copy">&copy Copyright Barberia Alura - 2023</p>
+    </footer>
+</body>
+
+</html>
